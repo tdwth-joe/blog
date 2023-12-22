@@ -1,40 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <title>Main Blog</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>TDWTH | tdwth.com</title>
 </head>
+
 <body>
-    <div class='main-content'>
-        <div class="wrapper">
-            <h1 class='latest'>The Dad with the Hat</h1>
-            <div class="latest-grid">
-                <!-- Grid Item 1 -->
-                <div class="latest-grid-item one">
-                    <img src="https://source.unsplash.com/collection/887284/1600x900">
-                    <h2>[TITLE OF POST]</h2>
-                    <h3>[POST DATE]</h3>
-                    <hr />
-                    <p>[POST EXCERPT]</p>
-                    <button class="read-article-btn">Read Article</button>
-                </div>
-                <!-- Other Grid Items ... -->
-            </div>
+  <div class='main-content'>
+    <div class="wrapper">
+      <h1 class='latest'>TDWTH</h1>
+      <div class="latest-grid">
+        <div class="latest-grid-item one">
+          <img src="https://source.unsplash.com/collection/887284/1600x900">
+          <h2>WELCOME</h2>
+          <h3>12/21/2023</h3>
+          <hr />
+          <p>my first post is a generalized welcome to my blog.</p>
+          <button onclick="revealPost()">Read Article</button>
         </div>
+      </div>
     </div>
-    <div class="article-content">
-        <div class="container">
-            <div class="page">
-                <header>
-                    <!-- Exit Button -->
-                    <div class="account"></div>
-                </header>
-                <div class="content">
-                    <!-- Article Content Goes Here -->
-                </div>
-            </div>
+    <div id="postOverlay" class="overlay" style="display:none;">
+      <div class="page">
+        <!-- Close button -->
+        <button class="closeButton" onclick="closePost()">✖</button>
+        <!-- Post content -->
+        <div class="content">
+          <h1 id="postTitle">The Art of Selecting the Perfect Sunglasses</h1>
+          <div class="date" id="postDate">[Your Post Date]</div>
+          <p id="postContent">In the world of fashion and functionality, sunglasses are not mere accessories; they are protectors of our vision, and silent enhancers of our personal style. Join me on a journey through the fascinating world of sunglasses, unveiling secrets and tips to help you choose the perfect pair.</p>
+
+          <h2>A Brief History of Sunglasses</h2>
+          <p>From Inuit snow goggles to Hollywood's golden age, sunglasses have evolved from primitive eye protection to fashion statements. This evolution has given birth to a plethora of designs, each telling its own story.</p>
+
+          <h2>Understanding UV Protection</h2>
+          <p>Sunglasses are your frontline defense against harmful UV rays. Learn about UVA, UVB, and UVC rays, and how the right pair of sunglasses can shield your eyes, preventing conditions like cataracts and macular degeneration.</p>
+
+          <h2>Choosing the Right Tint</h2>
+          <p>Tints are not just about aesthetics; they enhance visibility and reduce glare. Whether you’re a beach lover or a snow enthusiast, there’s a tint for every environment.</p>
+
+          <h2>Finding Your Frame: Style Meets Function</h2>
+          <p>Frame style can define your entire look. Discover how to match the right frame to your face shape, whether it's the classic aviators or the bold wayfarers.</p>
+
+          <h2>Material Matters</h2>
+          <p>The material of your sunglasses affects their durability and comfort. Explore the benefits of various materials from light acetate to sturdy polycarbonate.</p>
+
+          <h2>Sunglasses in Fashion and Culture</h2>
+          <p>From Audrey Hepburn to The Blues Brothers, sunglasses have been iconic in fashion. They’re not just accessories; they’re a statement.</p>
+
+          <h2>Caring for Your Sunglasses</h2>
+          <p>Extend the life of your sunglasses with proper care. Here are tips for maintaining their condition and keeping them looking as good as new.</p>
+
+          <h2>Conclusion: Your Vision, Your Style</h2>
+          <p>Choosing the perfect pair of sunglasses blends science and art. Protect your eyes while expressing your personal style, and remember, the right pair of sunglasses is an extension of your personality.</p>
         </div>
+
+      </div>
     </div>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
+
 </html>
